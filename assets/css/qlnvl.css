@@ -1,0 +1,254 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 50px; */
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Menu Header */
+.menu-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+}
+
+.menu-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 5px;
+}
+
+.menu-button {
+    border: none;
+    background: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+}
+
+.menu-button:hover {
+    background-color: #f4f4f4;
+    border-radius: 3px
+}
+
+.menu-button.active {
+    color: #45a049;
+    font-weight: bold;
+    border-style: none none solid none;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.action-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 10x;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.action-button:hover {
+    background-color: #45a049;
+}
+
+.view-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    font-size: 10x;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Table Styles */
+
+.table-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    max-height: 400px; /* Set the max height for the table container */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    border: 1px solid #ddd; /* Optional: Add a border around the scrollable area */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+th {
+    background: #f4f4f4;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .menu-header {
+        flex-direction: column;
+    }
+
+    .menu-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+
+    .item-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* expriry status */
+.expiry-status {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.valid {
+    color: green;
+}
+.expired {
+    color: red;
+}
+
+/* delivery status */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.processing {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* order filter */
+.filter-section {
+    margin-bottom: 15px;
+}
+
+.filter-section label {
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.expiry-status.valid {
+    color: green;
+    font-weight: bold;
+}
+
+.expiry-status.expired {
+    color: red;
+    font-weight: bold;
+}
+
+/* checkboxes*/
+.checkbox-column {
+    width: 30px;
+    text-align: center;
+}
+
